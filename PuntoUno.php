@@ -8,17 +8,19 @@
     <title>PuntoUno</title>
 </head>
 
-<body style= "font-family:comfortaa; margin:200px;">
+<body style= "margin:200px; margin-top:300px; background-image: url('back1-01_Mesa de trabajo 1.png'); background-size: cover;">
 
 
     <h1 style="font-size:40px;
-               color: #0092ff">
+               color: #ffbeb5;
+               font-family: sketchy;
+               letter-spacing: 10px">
         Realiza Aquí Tus Calculos Matemáticos
     </h1>
     <hr>
     <br>
 
-    <form style="" method="POST">
+    <form style="font-family:comfortaa;color: #ffffff;" method="POST">
         <div>
             <label for="numero1">Por favor digita el primer numero</label>
             <input type="text" 
@@ -26,7 +28,9 @@
             style="font-family:comfortaa;
             border-radius: 20px;
             width:50px;
-            height: 25px;" 
+            height: 25px;
+            border-color: #ffffff;
+            background-color: #6b9ef7;" 
             placeholder="  Ej. 1">
         </div>
         <br>
@@ -37,7 +41,9 @@
             style="font-family:comfortaa;
             border-radius: 20px;
             width:50px;
-            height:25px;" 
+            border-color: #ffffff;
+            height:25px;
+            background-color: #6b9ef7;" 
             placeholder="  Ej. 5">
         </div>
 
@@ -77,7 +83,6 @@
            padding: 8px;
            margin-top: 20px;" 
            name="multiplicacion"> ¿Deseas Multiplicar? </button> 
-
            <button style="background-color:#0092ff;
            color: #FFFFFF; 
            font-family:comfortaa; 
@@ -94,6 +99,7 @@
     <br>
     <hr>
     <br>
+<div style= "font-family: comfortaa;color: #FFFFFF;">
     <div>
         <?php 
             if(isset($_POST["suma"])){
@@ -159,5 +165,6 @@
             }
         ?>
     </div>
+</div>
 </body>
 </html>

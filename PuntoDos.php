@@ -6,12 +6,12 @@
     <title>PuntoDos</title>
 </head>
 
-<body style= "font-family:comfortaa; margin:200px;">
+<body style= "font-family:helvetica; margin:200px; background-image: url('bodytech.jpg'); background-size: cover;">
 
 <div>
 
     <h1 style="font-size:40px;
-               color: #0092ff">
+               color: #ffffff;">
         Calcula aquí tu IMC - Bodytech
     </h1>
     <hr>
@@ -19,10 +19,10 @@
     <form style="" method="POST">
         <div>
             <label for="peso" 
-            style= "font-size:15px"> Por favor digita tu peso </label>
+            style= "font-size:15px; color: #ffffff;"> Por favor digita tu peso </label>
             <input type="text" 
             name="peso" 
-            style="font-family:comfortaa;
+            style="font-family:helvetica;
             border-radius: 20px;
             width:53px;
             height:25px;" 
@@ -30,10 +30,11 @@
         </div>
         <br>
         <div>
-            <label for="estatura" style="font-size:15px"> Por favor digita tu Estatura</label>
+            <label for="estatura"
+            style="font-size:15px;color: #ffffff;"> Por favor digita tu Estatura</label>
             <input type="text" 
             name="estatura" 
-            style="font-family:comfortaa;
+            style="font-family:helvetica;
             border-radius: 20px;
             width:55px;
             height:25px;" 
@@ -42,7 +43,7 @@
         <br>
         <button style="background-color:#0092ff;
            color: #FFFFFF; 
-           font-family:comfortaa; 
+           font-family:helvetica; 
            border-radius: 20px;
            border: none;
            font-size:15px;
@@ -54,7 +55,7 @@
     <br>
     <hr>
     <br>
-    <div style="font-size:15px">
+    <div style="font-size:15px; color: #FFFFFF;">
         <?php 
             if(isset($_POST["IMC"])){
                 $peso=$_POST["peso"];
@@ -65,7 +66,7 @@
         ?>
     </div>
     <br>
-    <div style="font-size:15px">
+    <div style="font-size:15px; color: #FFFFFF;">
         <?php
             if(isset($_POST["IMC"])){
                 if ($IMC<18.5) {
