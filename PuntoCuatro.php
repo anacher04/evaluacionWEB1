@@ -8,22 +8,30 @@
 </head>
 
 
-    <body style= "font-family:comfortaa; margin:200px;">
+    <body style= "font-family:helvetica; margin:200px; background-image: url('postobon.jpg'); background-size: cover;">
 
     <header>
-        <h1 style="font-size:40px;
-               color: #0092ff">
-               Postobón te paga
+        <h1 style="font-size:60px;
+               color: #ffffff;
+               font-family: sketchy;
+               letter-spacing: 4px;">
+               Postobón si Paga
         </h1>
-    <hr>
-    <br>
     </header>
+    <div style= "background-color: #841a7070; border-radius:20px; padding:10px; padding-left:30px;">
 
-         <h2>
+    <br>
+
+         <h2 style="font-size:30px;
+               color: #ffffff;
+               font-family: sketchy;
+               letter-spacing: 4px;">
                ¿Quieres saber el valor de tu pago cada semana?
         </h2>
 
-        <h4>
+        <h4 style="font-size:20px;
+               color: #ffffff;
+               font-family: comfortaa;">
                Por favor digita aquí la cantidad de horas que trabajas en la semana
         </h4>
 
@@ -32,20 +40,21 @@
             <label for="horas" 
             style="font-size:20px"></label>
             <input type="text" name="horas" 
-            style="font-family:comfortaa;
+            style="font-family: sketchy;
+            letter-spacing: 4px;
             border-radius: 20px;
-            width:50px;
+            width:65px;
             height: 25px;"
              placeholder="  Ej. 20" >
         </div>
         <br>
-        <button style="background-color:#0092ff;
+        <button style="background-color:#841a70;
            color: #FFFFFF; 
-           font-family:comfortaa; 
+           font-family: sketchy;
            border-radius: 20px;
            border: none;
-           font-size:15px;
-           letter-spacing: normal;
+           font-size:20px;
+           letter-spacing: 4px;
            display: inline-block;
            padding: 8px;
            margin-top: 8px;"
@@ -53,10 +62,12 @@
     </form>
 
 <br>
-<hr>
+
+</div>
 <br>
 
-    <div style="font-size:15px">
+
+    <div style="color: #ffffff;border-radius:20px; font-size:60px; font-family: sketchy;letter-spacing:2px; background-color:#841a70; padding-left:30px">
         <?php 
             if(isset($_POST["total"])){
                 $horas=$_POST["horas"];
